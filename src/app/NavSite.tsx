@@ -3,7 +3,7 @@ import React from 'react';
 import SiteCard from './SiteCard';
 
 const sites = [
-    { title: 'SVG Logo', description: 'Effortlessly Create Stunning SVG Logos, Unleash Your Creativity!', url: 'https://gangbo.github.io/svg-logo-maker/' },
+    { title: 'SVG Logo', description: 'Effortlessly Create Stunning SVG Logos, Unleash Your Creativity!', url: 'https://gangbo.github.io/font-to-svg/' },
     // 添加更多站点信息
 ];
 
