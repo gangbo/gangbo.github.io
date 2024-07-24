@@ -38,6 +38,12 @@ jobs:
           node-version: "20"
           cache: 'pnpm'
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+        # Ensure pnpm is added to PATH
+        env:
+          PATH: /home/runner/.npm-global/bin:$PATH
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -46,9 +52,6 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
-
-      - name: Install pnpm
-        run: npm install -g pnpm
 
       - name: Restore cache
         uses: actions/cache@v4
