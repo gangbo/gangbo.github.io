@@ -13,6 +13,11 @@ const sites = [
         title: 'SVG Backgrounds',
         description: 'Free SVG Backgrounds and Patterns',
         url: 'https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/'
+    },
+    {
+        title: '思维导图',
+        description: 'Markdown 思维导图生成工具，轻松将 Markdown 文本转换为 SVG 格式的思维导图',
+        url: 'https://markup-1nj.pages.dev/'
     }
 ];
 
