@@ -23,10 +23,21 @@ const sites = [
 
 const NavSite: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
-            {sites.map((site, index) => (
-                <SiteCard key={index} title={site.title} description={site.description} url={site.url}/>
-            ))}
+        <div className="relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-fr">
+                {sites.map((site, index) => (
+                    <div key={index} className="transform transition-all duration-300 hover:scale-105 h-full">
+                        <SiteCard title={site.title} description={site.description} url={site.url}/>
+                    </div>
+                ))}
+            </div>
+            
+            {/* 添加"添加更多"卡片 */}
+            <div className="mt-12 text-center">
+                <p className="text-gray-500 dark:text-gray-400">
+                    更多实用工具正在添加中...
+                </p>
+            </div>
         </div>
     );
 };
