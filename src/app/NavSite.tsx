@@ -18,6 +18,16 @@ const sites = [
         title: '思维导图',
         description: 'Markdown 思维导图生成工具，轻松将 Markdown 文本转换为 SVG 格式的思维导图',
         url: 'https://markup-1nj.pages.dev/'
+    },
+    {
+        title: 'SVG Preview',
+        description: 'SVG Preview 是一个在线工具，可以预览 SVG 文件，并提供 SVG 文件的下载',
+        url: 'https://svg-preview.pages.dev/'
+    },
+    {
+        title: 'SVG to PNG',
+        description: 'SVG to PNG 是一个在线工具，可以将 SVG 文件转换为 PNG 文件',
+        url: 'https://svg-to-png-c14.pages.dev/'
     }
 ];
 
