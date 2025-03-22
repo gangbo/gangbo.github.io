@@ -28,6 +28,16 @@ const sites = [
         title: 'SVG to PNG',
         description: 'SVG to PNG 是一个在线工具，可以将 SVG 文件转换为 PNG 文件',
         url: 'https://svg-to-png-c14.pages.dev/'
+    },
+    {
+        title: 'Google Fonts Proxy',
+        description: 'Google Fonts Proxy 是一个在线工具，可以代理 Google Fonts 的请求，从而解决 Google Fonts 被墙的问题',
+        url: 'https://google-fonts-proxy.pages.dev/'
+    },
+    {
+        title: 'Letter Avatar',
+        description: 'Letter Avatar 是一个在线工具，可以生成一个基于字母的 Avatar',
+        url: 'https://letteravatar.com/'
     }
 ];
 
@@ -37,11 +47,11 @@ const NavSite: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-fr">
                 {sites.map((site, index) => (
                     <div key={index} className="transform transition-all duration-300 hover:scale-105 h-full">
-                        <SiteCard title={site.title} description={site.description} url={site.url}/>
+                        <SiteCard title={site.title} description={site.description} url={site.url} />
                     </div>
                 ))}
             </div>
-            
+
             {/* 添加"添加更多"卡片 */}
             <div className="mt-12 text-center">
                 <p className="text-gray-500 dark:text-gray-400">
